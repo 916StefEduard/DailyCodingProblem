@@ -3,7 +3,7 @@
 #include <list>
 using namespace std;
 
-//Detect cycles in an undirected graph
+//Detect cycles in an directed graph
 // 1->2->3->4->1 has a cycle.
 
 class Graph{
@@ -46,6 +46,7 @@ public:
         nodes.push_back(start);
         nodes.push_back(end);
         adj[start].push_back(end);
+        adj[end].push_back(start);
     }
 };
 
