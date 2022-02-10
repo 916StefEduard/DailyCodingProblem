@@ -8,9 +8,5 @@ My Challenge of Doing a Coding problem every single day.
 4) TwoSum(return the indexes of the 2 numbers that add up to a target)
 5) Convert an integer to a roman number\n
 6)You are climbing a staircase. It takes n steps to reach the top.Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-<<<<<<< HEAD
 7) Given a binary tree, check if the tree is balanced or not!!
 =======
-
- 
->>>>>>> 44299021dc5da12137cd76cc3b8ed79f0766e4e0
