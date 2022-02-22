@@ -11,4 +11,5 @@ My Challenge of Doing a Coding problem every single day.
 7) Given a binary tree, check if the tree is balanced or not!!
 8) Given a normal graph, compute the dfs of the graph from a starting vertex.
 9) Given a normal graph, compute the bfs of the graph from a starting vertex.
+10) Given a binary tree, find all the paths from root to leaves.
 =======
