@@ -12,4 +12,5 @@ My Challenge of Doing a Coding problem every single day.
 8) Given a normal graph, compute the dfs of the graph from a starting vertex.
 9) Given a normal graph, compute the bfs of the graph from a starting vertex.
 10) Given a binary tree, find all the paths from root to leaves.
+12) Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 =======
