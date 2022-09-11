@@ -1,10 +1,12 @@
 """
-Write a function to find the
-longest common prefix string amongst an array of strings.
+Write a function that will compute all permutations 
+of small letters into upper ones.
 
-Added Complexity: O(m*n) + O(n)
-Space: O(1)
+input: "a1b1"
+output: "a1b1", "A1b1", "a1B1", "A1B1"
 
+Time: O(2^n)
+Space: O(n) - we have n recursive calls on the stack.
 
 """
 
