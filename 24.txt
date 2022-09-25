@@ -1,0 +1,55 @@
+"""
+You are given two strings s1 and s2 of equal length consisting of letters "x" and "y" only.
+Your task is to make these two strings equal to each other. You can swap any two characters
+that belong to different strings, which means: swap s1[i] and s2[j].
+Return the minimum number of swaps required to make s1 and s2 equal,
+or return -1 if it is impossible to do so.
+
+Input: s1 = "xx", s2 = "yy"
+Output: 1
+
+Ideas:
+    - iterate through each string and
+    if we have the following example:
+        if s1[i] == s2[i] continue
+        if s1[i] != s2[i] and s1[i] == 'x' n1 +=1
+        if s1[i] != s2[i] and s1[i] == 'y' n2 +=1
+
+    xx  => xy
+    yy     yx   1 step
+
+    xy     xx     xy
+    yx =>  yy =>  yx 2 steps
+
+    xxy  => xyy => impossible for this case
+    yyx     xyx
+
+    xxyy  => xyxy (2steps)
+    yyxx     xyxy  happy case both n1 and n2 are even
+
+    xxxyyy
+    yyyxxx (3steps)
+
+    xxx yyy     xy
+    yyy xxx  => yx  apply the second algorithm only if n1 and n2 are both odd and we make an extra step
+"""
+
+def function(word1, word2):
+    n1 = n2 = 0
+    for i in range(0, len(word1)):
+        if word1[i] != word2[i]:
+            if word1[i] == 'x' and word2[i] == 'y':
+                n1 += 1
+            else:
+                n2 += 1
+    if n1%2 == n2%2:
+      if n1%2 == 0:
+            return (n1 + n2)/2
+      else:
+            return (n1 + n2) / 2 + 2
+    return -1
+
+n1 = "xxxyyy"
+n2 = "yyyxxx"
+print(function(n1, n2))
+
