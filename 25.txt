@@ -1,0 +1,15 @@
+class Solution:
+    """
+     Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+     Explanation:
+      A simple trick would be to check if the string s string concatenated by itself would contain the goal string
+      Since goal is a rotation of s, the doubleing of the s string would always contain the full goal string, no
+      matter how many rotations are done.
+    """
+    def rotateString(self, s: str, goal: str) -> bool:
+        if len(s) != len(goal):
+            return False
+        if goal in s + s:
+            return True
+        return False
